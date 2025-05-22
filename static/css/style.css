@@ -45,9 +45,11 @@ section {
 
 h2 {
     color: #003366;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+    border-top: 1px solid #fff;  /* Línea blanca arriba */
+    padding-top: 10px;           /* Espacio entre la línea y el texto */
+    margin-top: 40px;            /* Más espacio con la sección anterior */
 }
+
 
 .profile-img {
   width: 150px;
