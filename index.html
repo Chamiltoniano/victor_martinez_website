@@ -14,7 +14,7 @@
       padding: 0;
     }
     .container {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
       padding: 20px;
     }
@@ -28,23 +28,39 @@
     section {
       margin-top: 40px;
     }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
     .card {
       background: #1e1e1e;
       border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 30px;
+      padding: 15px;
+      width: 280px;
       box-shadow: 0 0 10px rgba(255,255,255,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .card img {
-      max-width: 100%;
+      width: 100%;
+      max-height: 160px;
+      object-fit: cover;
       border-radius: 5px;
     }
     .card h3 {
       margin-top: 10px;
+      font-size: 1.1em;
+    }
+    .card p {
+      font-size: 0.9em;
+      text-align: center;
     }
     .card button {
-      margin-top: 15px;
-      padding: 10px 15px;
+      margin-top: auto;
+      padding: 8px 12px;
       background-color: #337ab7;
       color: white;
       border: none;
@@ -105,28 +121,29 @@
       <h4>I don't have any paid hosting or domain at the moment, so I can't show you any of my PWA projects. Instead, feel free to explore my best apps, which were published on the Google Play Store.</h4>
     </section>
 
-    <div class="card">
-      <h3>Analytic Geometry</h3>
-      <img src="static/img/analyticgeometry/1.jpg" alt="Miniatura de Analytic Geometry">
-      <p>Android application in Java. Returns the explicit, canonical, and general equations of conic sections—line, circle, parabola, ellipse, and hyperbola. It also generates graphs for each curve.</p>
-      <button onclick="openModal('modalAnalytic')">View More</button>
+    <div class="grid">
+      <div class="card">
+        <img src="static/img/analyticgeometry/1.jpg" alt="Miniatura de Analytic Geometry">
+        <h3>Analytic Geometry</h3>
+        <p>Returns the explicit, canonical, and general equations of conic sections and graphs.</p>
+        <button onclick="openModal('modalAnalytic')">View More</button>
+      </div>
+
+      <div class="card">
+        <img src="static/img/allkinematics/1.jpg" alt="Miniatura de All Kinematics">
+        <h3>All Kinematics</h3>
+        <p>Calculator for uniform motion, accelerated motion, and projectile motion with graphs.</p>
+        <button onclick="openModal('modalKinematics')">View More</button>
+      </div>
+
+      <div class="card">
+        <img src="static/img/matematicafinanciera/1.jpg" alt="Miniatura de Matematica Financiera">
+        <h3>Matematica Financiera</h3>
+        <p>Calculators for interest, annuities, amortizations using French and German systems.</p>
+        <button onclick="openModal('modalFinanciera')">View More</button>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>All Kinematics</h3>
-      <img src="static/img/allkinematics/1.jpg" alt="Miniatura de All Kinematics">
-      <p>Calculator for various kinematic phenomena including uniform motion, accelerated motion, and projectile motion. Graphs are generated for each case.</p>
-      <button onclick="openModal('modalKinematics')">View More</button>
-    </div>
-
-    <div class="card">
-      <h3>Matematica Financiera</h3>
-      <img src="static/img/matematicafinanciera/1.jpg" alt="Miniatura de Matematica Financiera">
-      <p>App that includes calculators for financial operations like interest, annuities, and amortizations. Supports both French and German systems.</p>
-      <button onclick="openModal('modalFinanciera')">View More</button>
-    </div>
-
-    <!-- Modal: Analytic Geometry -->
     <div id="modalAnalytic" class="modal">
       <span class="close" onclick="closeModal('modalAnalytic')">&times;</span>
       <div class="modal-content">
@@ -140,7 +157,6 @@
       </div>
     </div>
 
-    <!-- Modal: All Kinematics -->
     <div id="modalKinematics" class="modal">
       <span class="close" onclick="closeModal('modalKinematics')">&times;</span>
       <div class="modal-content">
@@ -155,7 +171,6 @@
       </div>
     </div>
 
-    <!-- Modal: Matematica Financiera -->
     <div id="modalFinanciera" class="modal">
       <span class="close" onclick="closeModal('modalFinanciera')">&times;</span>
       <div class="modal-content">
@@ -170,38 +185,6 @@
         <img src="static/img/matematicafinanciera/9.jpg">
       </div>
     </div>
-
-    <section>
-      <h2>Academic Degrees</h2>
-      <p><strong>PhD in Computer Science</strong> – National University of Asunción</p>
-      <p><strong>Master in Computer Science</strong> – National University of Asunción</p>
-      <p><strong>Bachelor in Physical Sciences</strong> – National University of Asunción</p>
-    </section>
-
-    <section>
-      <h2>Bibliographic Production</h2>
-      <p>See full list in <a href="https://scholar.google.com/citations?user=0K0qp-4AAAAJ&hl=es" target="_blank">Google Scholar</a></p>
-    </section>
-
-    <section>
-      <h2>Teaching Activities</h2>
-      <p>FP-UNA (2012–present), FaCEN-UNA (2012), Columbia University (2021–present), Uninter (2021)</p>
-    </section>
-
-    <section>
-      <h2>Thesis Supervision</h2>
-      <p>Advisor of 4 students (2024–present)</p>
-    </section>
-
-    <section>
-      <h2>Awards</h2>
-      <p>Special Mention – National Science Award (2020)</p>
-    </section>
-
-    <section>
-      <h2>Conferences</h2>
-      <p>Presenter in Switzerland, Argentina, Paraguay (2018–2024)</p>
-    </section>
   </div>
 
   <script>
