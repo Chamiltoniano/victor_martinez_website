@@ -5,6 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dr. Victor Manuel Martínez Chamorro</title>
   <link rel="stylesheet" href="static/css/style.css" />
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+    }
+    header {
+      text-align: center;
+    }
+    section {
+      margin-top: 40px;
+    }
+    .card {
+      background: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    .card h3 {
+      margin-top: 10px;
+    }
+    .card button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #337ab7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      background-color: rgba(0,0,0,0.9);
+      padding: 60px 20px;
+    }
+    .modal-content {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .modal-content img {
+      max-width: 200px;
+      border-radius: 5px;
+    }
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -19,61 +99,77 @@
     <section>
       <h2>Portfolio / Selected Web and App Projects</h2>
       <ul>
-        <li><strong>Free white board:</strong><br>A free white board to write, change colors, eraser, save and print option and a simple calculator.<br> <a href="https://free-board.onrender.com" target="_blank">https://free-board.onrender.com</a></li>
-      <!--  <li><strong>Countdown Web App:</strong> <a href="https://countdown-site-0cyz.onrender.com" target="_blank">https://countdown-site-0cyz.onrender.com</a></li>
-        <li><strong>Random things:</strong> <a href="https://may-six.onrender.com" target="_blank">https://may-six.onrender.com</a></li>  -->
-        <li><strong>Android Apps Repo:</strong><br>Public GitHub repository with APKs and source code of Android apps built with Java (2019–2022).<br><a href="https://github.com/Chamiltoniano/Android-Apps" target="_blank">https://github.com/Chamiltoniano/Android-Apps</a></li>
+        <li><strong>Free white board:</strong><br><a href="https://free-board.onrender.com" target="_blank">https://free-board.onrender.com</a></li>
+        <li><strong>Android Apps Repo:</strong><br><a href="https://github.com/Chamiltoniano/Android-Apps" target="_blank">https://github.com/Chamiltoniano/Android-Apps</a></li>
       </ul>
-  <h4>I don't have any paid hosting or domain at the moment, so I can't show you any of my PWA projects. Instead, feel free to explore my best apps, which were published on the Google Play Store.</h4>
- <div class="project-details">
-  <h3>Analytic Geometry</h2>
-  <p>Android application in Java. Returns the explicit, canonical, and general equations of conic sections—line, circle, parabola, ellipse, and hyperbola. It also generates graphs for each curve. Initial data is provided according to each case.</p>
-
-  <div class="gallery">
-    <img src="static/img/analyticgeometry/1.jpg" alt="App screenshot 1">
-    <img src="static/img/analyticgeometry/2.jpg" alt="App screenshot 2">
-    <img src="static/img/analyticgeometry/3.jpg" alt="App screenshot 3">
-    <img src="static/img/analyticgeometry/4.jpg" alt="App screenshot 4">
-    <img src="static/img/analyticgeometry/5.jpg" alt="App screenshot 5">
-    <img src="static/img/analyticgeometry/6.jpg" alt="App screenshot 6">
-    <img src="static/img/analyticgeometry/7.jpg" alt="App screenshot 7">
-  </div>
-</div> 
-
- <div class="project-details">
-  <h3>All Kinematics</h3>
-  <p>Android application in Java. Calculator for various kinematic phenomena of point objects, including uniform motion, accelerated motion, and projectile motion. For each case, position vs. time graphs are generated.</p>
-
-  <div class="gallery">
-    <img src="static/img/allkinematics/1.jpg" alt="App screenshot 1">
-    <img src="static/img/allkinematics/2.jpg" alt="App screenshot 2">
-    <img src="static/img/allkinematics/3.jpg" alt="App screenshot 3">
-    <img src="static/img/allkinematics/4.jpg" alt="App screenshot 4">
-    <img src="static/img/allkinematics/5.jpg" alt="App screenshot 5">
-    <img src="static/img/allkinematics/6.jpg" alt="App screenshot 6">
-    <img src="static/img/allkinematics/7.jpg" alt="App screenshot 7">
-    <img src="static/img/allkinematics/8.jpg" alt="App screenshot 8">
-  </div>
-</div>
-
- <div class="project-details">
-  <h3>Matematica Financiera</h3>
-  <p>Android application in Java. Calculator for practical cases in financial mathematics, including simple interest, compound interest, annuities, and amortization tables using the French and German systems.</p>
-
-  <div class="gallery">
-    <img src="static/img/matematicafinanciera/1.jpg" alt="App screenshot 1">
-    <img src="static/img/matematicafinanciera/2.jpg" alt="App screenshot 2">
-    <img src="static/img/matematicafinanciera/3.jpg" alt="App screenshot 3">
-    <img src="static/img/matematicafinanciera/4.jpg" alt="App screenshot 4">
-    <img src="static/img/matematicafinanciera/5.jpg" alt="App screenshot 5">
-    <img src="static/img/matematicafinanciera/6.jpg" alt="App screenshot 6">
-    <img src="static/img/matematicafinanciera/7.jpg" alt="App screenshot 7">
-    <img src="static/img/matematicafinanciera/8.jpg" alt="App screenshot 8">
-    <img src="static/img/matematicafinanciera/9.jpg" alt="App screenshot 9">
-  </div>
-</div>
-
+      <h4>I don't have any paid hosting or domain at the moment, so I can't show you any of my PWA projects. Instead, feel free to explore my best apps, which were published on the Google Play Store.</h4>
     </section>
+
+    <div class="card">
+      <h3>Analytic Geometry</h3>
+      <img src="static/img/analyticgeometry/1.jpg" alt="Miniatura de Analytic Geometry">
+      <p>Android application in Java. Returns the explicit, canonical, and general equations of conic sections—line, circle, parabola, ellipse, and hyperbola. It also generates graphs for each curve.</p>
+      <button onclick="openModal('modalAnalytic')">View More</button>
+    </div>
+
+    <div class="card">
+      <h3>All Kinematics</h3>
+      <img src="static/img/allkinematics/1.jpg" alt="Miniatura de All Kinematics">
+      <p>Calculator for various kinematic phenomena including uniform motion, accelerated motion, and projectile motion. Graphs are generated for each case.</p>
+      <button onclick="openModal('modalKinematics')">View More</button>
+    </div>
+
+    <div class="card">
+      <h3>Matematica Financiera</h3>
+      <img src="static/img/matematicafinanciera/1.jpg" alt="Miniatura de Matematica Financiera">
+      <p>App that includes calculators for financial operations like interest, annuities, and amortizations. Supports both French and German systems.</p>
+      <button onclick="openModal('modalFinanciera')">View More</button>
+    </div>
+
+    <!-- Modal: Analytic Geometry -->
+    <div id="modalAnalytic" class="modal">
+      <span class="close" onclick="closeModal('modalAnalytic')">&times;</span>
+      <div class="modal-content">
+        <img src="static/img/analyticgeometry/1.jpg">
+        <img src="static/img/analyticgeometry/2.jpg">
+        <img src="static/img/analyticgeometry/3.jpg">
+        <img src="static/img/analyticgeometry/4.jpg">
+        <img src="static/img/analyticgeometry/5.jpg">
+        <img src="static/img/analyticgeometry/6.jpg">
+        <img src="static/img/analyticgeometry/7.jpg">
+      </div>
+    </div>
+
+    <!-- Modal: All Kinematics -->
+    <div id="modalKinematics" class="modal">
+      <span class="close" onclick="closeModal('modalKinematics')">&times;</span>
+      <div class="modal-content">
+        <img src="static/img/allkinematics/1.jpg">
+        <img src="static/img/allkinematics/2.jpg">
+        <img src="static/img/allkinematics/3.jpg">
+        <img src="static/img/allkinematics/4.jpg">
+        <img src="static/img/allkinematics/5.jpg">
+        <img src="static/img/allkinematics/6.jpg">
+        <img src="static/img/allkinematics/7.jpg">
+        <img src="static/img/allkinematics/8.jpg">
+      </div>
+    </div>
+
+    <!-- Modal: Matematica Financiera -->
+    <div id="modalFinanciera" class="modal">
+      <span class="close" onclick="closeModal('modalFinanciera')">&times;</span>
+      <div class="modal-content">
+        <img src="static/img/matematicafinanciera/1.jpg">
+        <img src="static/img/matematicafinanciera/2.jpg">
+        <img src="static/img/matematicafinanciera/3.jpg">
+        <img src="static/img/matematicafinanciera/4.jpg">
+        <img src="static/img/matematicafinanciera/5.jpg">
+        <img src="static/img/matematicafinanciera/6.jpg">
+        <img src="static/img/matematicafinanciera/7.jpg">
+        <img src="static/img/matematicafinanciera/8.jpg">
+        <img src="static/img/matematicafinanciera/9.jpg">
+      </div>
+    </div>
 
     <section>
       <h2>Academic Degrees</h2>
@@ -84,17 +180,12 @@
 
     <section>
       <h2>Bibliographic Production</h2>
-      <p> See full list in <a href="https://scholar.google.com/citations?user=0K0qp-4AAAAJ&hl=es" target="_blank">Google Scholar</a></p>
+      <p>See full list in <a href="https://scholar.google.com/citations?user=0K0qp-4AAAAJ&hl=es" target="_blank">Google Scholar</a></p>
     </section>
-
-  <!--  <section>
-      <h2>Research Projects</h2>
-      <p>Including TWAS 2022, CONACYT 2022, and more since 2012.</p>
-    </section>    -->
 
     <section>
       <h2>Teaching Activities</h2>
-      <p>Institutions: FP-UNA(2012–present), FaCEN-UNA(2012), Columbia University (2021-present), Uninter (2021)</p>
+      <p>FP-UNA (2012–present), FaCEN-UNA (2012), Columbia University (2021–present), Uninter (2021)</p>
     </section>
 
     <section>
@@ -109,8 +200,17 @@
 
     <section>
       <h2>Conferences</h2>
-      <p>Poster/Oral presenter in Switzerland, Argentina, Paraguay (2018–2024)</p>
+      <p>Presenter in Switzerland, Argentina, Paraguay (2018–2024)</p>
     </section>
   </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
 </body>
 </html>
